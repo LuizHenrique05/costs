@@ -9,6 +9,7 @@ import Projects from './components/pages/Projects'
 import Container from './components/layout/Container'
 import NavBar from './components/layout/NavBar'
 import Footer from './components/layout/Footer'
+import Project from './components/pages/Project'
 
 export default props => 
   <Router>
@@ -29,6 +30,9 @@ export default props =>
         </Route>
         <Route path="/newproject">
           <NewProject />
+        </Route>
+        <Route path="/project/:id">
+          <Project />
         </Route>
       </Container>
     </Switch>
